@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registration Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<center>
+<img src="assets/logo.png" style="width:30%">
+<br>
+<p><b>C++ MODULE APPLICATION</b></p>
+<p><b>Fill up all fields to register</b></p>
+<ion-item>
+  <ion-label>Name:</ion-label>
+  <ion-input style="border:1px solid #FFF;margin:20px" [(ngModel)]="name"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Address:</ion-label>
+  <ion-input style="border:1px solid #FFF;margin:20px" [(ngModel)]="address"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Username:</ion-label>
+  <ion-input style="border:1px solid #FFF;margin:20px" [(ngModel)]="username"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Password:</ion-label>
+  <ion-input type="password" style="border:1px solid #FFF;margin:20px" [(ngModel)]="password"></ion-input>
+</ion-item>
+
+<ion-item>
+<center>
+
+<ion-button  color="primary" [disabled]="!username || !password || !name || !address" onclick="alert('You are now registered. You can now login')" href="login">Register</ion-button>
+<ion-button  color="primary" href="login">Back to Login Form</ion-button>
+</center>
+</ion-item>
+
+</center>
+
+</ion-content>
